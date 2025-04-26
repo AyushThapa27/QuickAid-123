@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://agentwriting.com/wp-content/uploads/2024/01/Emergency-Service-Names.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+
+#form {
+    text-align: center;
+    font-size: xx-large;
+    margin-left: auto;
+    margin-top: 400px;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#para {
+    color: rgb(218, 214, 221);
+    font-style: italic;
+}
+
+button {
+    background-color: #03274b;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #054a91;
+}
+
+footer {
+    background-color:  #03274b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+.header {
+    background-color:  #03274b;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickAid - Emergency Helper</title>
+  <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+
+    <div class="hero-section">
+        <h2>Your Emergency Companion</h2>
+        <p>We’re here to help you when you need it most.</p>
+    </div>
+
+    <div class="quick-actions">
+        <h3>🚨 Quick Actions</h3>
+        <a href="tel:<%= ambulanceNumber ? ambulanceNumber : '108' %>"><button>🚑 Call Ambulance</button></a>
+        <a href="tel:<%= policeStationNumber ? policeStationNumber : '100' %>"><button>🚓 Call Police</button></a>
+        <a href="tel:<%= fireStation ? fireStation : '101' %>"><button>🔥 Fire Services</button></a>
+        <a href="tel:<%= womenHelpline ? womenHelpline : '1091' %>"><button>👩🏼‍💼 Women Helpline</button></a>
+    </div>
+    
+
+    <div class="location-info">
+        <h3>Your Current Location:</h3>
+        <div id="locationDisplay" style="margin-top: 20px; font-size: 18px; padding-left: 20px;">
+            <p id="location">Fetching your location...</p>
+            <ul>
+                <li>Longitude: <%= longitude %></li>
+                <li>Latitude: <%= latitude %></li>
+                <li>Pincode: <%= pincode %></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="emergency-contacts">
+        <h3>📋 Emergency Contacts</h3>
+        <ul>
+            <li>Hospital: <%= hospital %> - <%= hospitalNumber %></li>
+            <li>Police Station: <%= policeStation %> - <%= policeStationNumber %></li>
+            <li>Ambulance: <%= ambulanceNumber %></li>
+            <li>Women Helpline: <%= womenHelpline %></li>
+            <li>Fire Station: <%= fireStation %></li>
+        </ul>
+    </div>
+    
+    <div class="about" id="about">
+        <h3>About QuickAid</h3>
+        <p>QuickAid is designed to help you quickly contact emergency services when needed.</p>
+    </div>
+
+    <footer>
+        <p>QuickAid Helper to serve you</p>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>
